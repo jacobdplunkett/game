@@ -7,6 +7,8 @@ while correct do
     
     puts "Repeat the sequence: #{sequence.join(' ')}"
     puts "MAKE SURE TO LEAVE A SPACE AFTER EACH ANSWER!"
+    sleep(3)
+    system "clear" or system "cls"
     print '> '
     
     answer = gets.strip.split.map { |a| a.to_i }
